@@ -29,19 +29,31 @@ The project is built using the following technologies:
 The chatbot's LangGraph workflow consists of multiple nodes that handle different tasks:
 ![LangGraph Workflow](https://github.com/YiningHuang15/LangChain-Fitness-Assistant-Chatbot/blob/main/langgraph-workflow.png)
 
-1. **User Input Handling Node**  
-   Captures the user’s query and determines intent (chat, plan creation, or event search).
+1. **Intent_Node**  
+   - Determines the user’s intent from their query.  
+   - Routes to the appropriate node based on the detected intent.
 
-2. **Exercise Plan Node**  
-   Generates a personalized exercise plan based on user input and stores it in the agent state.
+2. **General_Chat_Node**  
+   - Handles casual conversation about fitness, workouts, and healthy habits.  
+   - Ends the workflow after responding.
 
-3. **Nearby Event Node**  
-   - Extracts structured information from user queries (game type, location, skill level).  
-   - Searches for matching events.  
-   - Presents options to the user and stores them in the agent state.
+3. **Exercise_Plan_Node**  
+   - Generates a personalized exercise plan tailored to the user’s fitness goals.  
+   - Ends the workflow after providing the plan.
 
-4. **Book Event Node**  
-   Processes the user’s event selection, confirms the booking, and updates the agent state with a booking confirmation.
+4. **Nearby_Event_Node**  
+   - Extracts structured information (game type, location, level) from the user’s query.  
+   - Searches for matching local sports events.  
+   - Routes to **Book_Nearby_Event_Node** if events are found, or **Alternative_Approach_Node** if no matches exist.
+
+5. **Book_Nearby_Event_Node**  
+   - Confirms the booking for the selected event.  
+   - Updates the agent state with a booking confirmation.  
+   - Ends the workflow.
+
+6. **Alternative_Approach_Node**  
+   - Handles cases where no events are found or other fallback scenarios.  
+   - Ends the workflow.
 
 The workflow ensures smooth transitions between general chat, personalized plan creation, and event booking.
 
