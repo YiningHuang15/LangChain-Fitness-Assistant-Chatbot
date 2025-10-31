@@ -1,5 +1,5 @@
 # AI Fitness Assistant Chatbot
-## *Plan Smarter. Play Together*
+*Plan Smarter. Play Together*
 
 ## 1. Project Overview & Description
 The **AI Fitness Assistant Chatbot** is an intelligent virtual assistant designed to help users with their fitness and workout goals. Powered by OpenAI chatgpt and built using LangChain, the chatbot provides three core functionalities:
@@ -50,11 +50,10 @@ The chatbot's LangGraph workflow consists of multiple nodes that handle differen
 
 The workflow ensures smooth transitions between general chat, personalized plan creation, and event booking.
 
----
 
 ## 4. Getting Started
 
-### Prerequisites
+#### Prerequisites
 - Python 3.9 or higher
 - Install required packages in the requirements.txt
 
