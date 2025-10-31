@@ -1,5 +1,5 @@
 # AI Fitness Assistant Chatbot
-*Plan Smarter. Play Together*
+## *Plan Smarter. Play Together*
 
 ## 1. Project Overview & Description
 The **AI Fitness Assistant Chatbot** is an intelligent virtual assistant designed to help users with their fitness and workout goals. Powered by OpenAI chatgpt and built using LangChain, the chatbot provides three core functionalities:
@@ -30,33 +30,50 @@ The chatbot's LangGraph workflow consists of multiple nodes that handle differen
 ![LangGraph Workflow](https://github.com/YiningHuang15/LangChain-Fitness-Assistant-Chatbot/blob/main/langgraph-workflow.png)
 
 1. **Intent_Node**  
-   - Determines the user’s intent from their query.  
-   - Routes to the appropriate node based on the detected intent.
+   - Determines the user’s intent from their query (General Chat, Exercise Plan, or Nearby Events) and routes to the appropriate node.
 
 2. **General_Chat_Node**  
-   - Handles casual conversation about fitness, workouts, and healthy habits.  
-   - Ends the workflow after responding.
+   - Handles casual conversation about fitness, workouts, and healthy habits.
 
 3. **Exercise_Plan_Node**  
-   - Generates a personalized exercise plan tailored to the user’s fitness goals.  
-   - Ends the workflow after providing the plan.
+   - Generates a personalized exercise plan based on the user’s goals and preferences.
 
 4. **Nearby_Event_Node**  
-   - Extracts structured information (game type, location, level) from the user’s query.  
-   - Searches for matching local sports events.  
-   - Routes to **Book_Nearby_Event_Node** if events are found, or **Alternative_Approach_Node** if no matches exist.
+   - Extracts structured information from user queries (game type, location, skill level).  
+   - Searches for matching local sports events and routes to the appropriate next node.
 
 5. **Book_Nearby_Event_Node**  
-   - Confirms the booking for the selected event.  
-   - Updates the agent state with a booking confirmation.  
-   - Ends the workflow.
+   - Confirms the booking for the selected event and updates the agent state with a confirmation.
 
 6. **Alternative_Approach_Node**  
-   - Handles cases where no events are found or other fallback scenarios.  
-   - Ends the workflow.
+   - Handles cases where no events are found or other fallback scenarios.
 
 The workflow ensures smooth transitions between general chat, personalized plan creation, and event booking.
 
 ---
 
 ## 4. Getting Started
+
+### Prerequisites
+- Python 3.9 or higher
+- Install required packages in the requirements.txt
+
+#### Clone the repository:
+```
+git clone https://github.com/YiningHuang15/LangChain-Fitness-Assistant-Chatbot
+cd ai-fitness-chatbot
+```
+
+#### Start the Streamlit app:
+```
+streamlit run 💬AI_Fitness_Chatbot.py
+```
+
+#### Interact with the AI Fitness Assistant Chatbot:
+1. Ask general fitness questions. e.g. "What is hatha yoga?"
+2. Generate personalized workout plans. e.g. "Suggest an exercise plan for training core in the gym for 30 minutes"
+3. Search and book nearby sports events automatically. e.g. "Find and book a beginner tennis meetup near Menlo Park 94025"
+
+#### Notes
+Ensure you have valid API credentials for any LLMs used (e.g., OpenAI API key).
+Event search functionality currently uses demo or static data; it can be extended to real event APIs.
