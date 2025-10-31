@@ -75,5 +75,4 @@ streamlit run 💬AI_Fitness_Chatbot.py
 
 #### Notes
 Ensure you have valid API credentials for any LLMs used (e.g., OpenAI API key).
-
 Event search functionality currently uses demo or static data; it can be extended to real event APIs.
