@@ -1,0 +1,16 @@
+﻿game_type,game_level,game_state,game_city,game_location,game_zip_code,game_date,game_time
+tennis,beginner,California,Sunnyvale,Sunnyvale Municipal Tennis Center,94087,11/25/25,3:00PM
+tennis,intermediate,California,Sunnyvale,Sunnyvale Municipal Tennis Center,94087,11/30/25,3:00PM
+tennis,beginner,California,Sunnyvale,Las Palmas Park Pickleball Courts,94087,11/15/25,3:00PM
+tennis,intermediate,California,Berkeley,San Pablo Park Pickleball Courts,94709,11/27/25,12:00PM
+tennis,advanced,California,Berkeley,San Pablo Park Pickleball Courts,94709,11/27/25,10:00AM
+tennis,intermediate,California,Berkeley,MLK Jr. Youth Services Center Gym,94709,12/5/25,7:00PM
+tennis,advanced,California,San Mateo,San Mateo High School Gym,94403,12/1/25,6:30PM
+tennis,intermediate,California,San Mateo,San Mateo High School Gym,94403,12/3/25,6:30PM
+tennis,beginner,California,San Mateo,Baywood Elementary Outdoor Courts,94403,11/22/25,10:00AM
+tennis,beginner,California,Menlo Park,Nealon Park Tennis Courts,94025,11/23/25,10:00AM
+tennis,beginner,California,Menlo Park,Arrillaga Family Gymnasium,94025,12/7/25,6:30PM
+tennis,beginner,California,Menlo Park,Arrillaga Family Gymnasium,94025,12/7/25,6:30PM
+volleyball,beginner,California,Sunnyvale,Braly Elementary,94068,12/6/25,10:00AM
+volleyball,beginner,California,Sunnyvale,Braly Elementary,94068,12/13/25,10:00AM
+volleyball,all,California,Sunnyvale,Braly Elementary,94068,12/20/25,10:00AM
