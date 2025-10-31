@@ -27,6 +27,7 @@ The project is built using the following technologies:
 
 ## 3. LangGraph Workflow
 The chatbot's LangGraph workflow consists of multiple nodes that handle different tasks:
+![LangGraph Workflow](https://github.com/YiningHuang15/LangChain-Fitness-Assistant-Chatbot/blob/main/langgraph-workflow.png)
 
 1. **User Input Handling Node**  
    Captures the user’s query and determines intent (chat, plan creation, or event search).
