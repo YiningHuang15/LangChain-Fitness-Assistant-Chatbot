@@ -15,7 +15,6 @@ The **AI Fitness Assistant Chatbot** is an intelligent virtual assistant designe
 
 This AI agent provides a seamless experience combining conversational interaction, personalized recommendations, and automated event booking.
 
----
 
 ## 2. Programming Languages & Tools
 The project is built using the following technologies:
@@ -25,7 +24,6 @@ The project is built using the following technologies:
 - **LangGraph** – Used to define the nodes and workflow for different chatbot functionalities.
 - **Streamlit** – Web interface for interacting with the chatbot and displaying event tables, personalized plans, and booking confirmations.
 
----
 
 ## 3. LangGraph Workflow
 The chatbot's LangGraph workflow consists of multiple nodes that handle different tasks:
