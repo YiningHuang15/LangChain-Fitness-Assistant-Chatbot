@@ -18,6 +18,9 @@ This AI agent provides a seamless experience combining conversational interactio
 
 ## 2. Programming Languages & Tools
 The project is built using the following technologies:
+![LangChain](https://img.shields.io/badge/LangChain-FF9900?style=for-the-badge&logo=langchain&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
 - **Python** – Core programming language for building the AI agent.
 - **LangChain** – Framework for constructing the AI agent and orchestrating workflows.
