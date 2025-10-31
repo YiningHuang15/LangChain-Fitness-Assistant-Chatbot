@@ -1,6 +1,9 @@
 # AI Fitness Assistant Chatbot
 *Plan Smarter. Play Together*
 
+[![Demo Video](http://img.youtube.com/vi/8dphWNxhL1I/0.jpg)](https://www.youtube.com/watch?v=8dphWNxhL1I)
+
+
 ## 1. Project Overview & Description
 The **AI Fitness Assistant Chatbot** is an intelligent virtual assistant designed to help users with their fitness and workout goals. Powered by OpenAI chatgpt and built using LangChain, the chatbot provides three core functionalities:
 
@@ -78,5 +81,5 @@ streamlit run 💬AI_Fitness_Chatbot.py
 3. Search and book nearby sports events automatically. e.g. "Find and book a beginner tennis meetup near Menlo Park 94025"
 
 #### Notes
-Ensure you have valid API credentials for any LLMs used (e.g., OpenAI API key).
+Ensure you have valid API credentials for any LLMs used (e.g., OpenAI API key).  
 Event search functionality currently uses demo or static data; it can be extended to real event APIs.
